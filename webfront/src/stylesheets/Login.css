@@ -1,0 +1,120 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@300;800&display=swap');
+
+:root {
+    --font-family: 'Noto Sans', sans-serif;
+}
+
+body {
+    font-family: var(--font-family);
+    background-color: #171139;
+    place-items: center;
+    color: #f9f9f9;
+}
+
+.login {
+    position: fixed;
+    z-index: 3;
+    top: 50%;
+    left: 50%;
+    translate: -50% -50%;
+    width: 30%;
+    padding: 20px 20px 50px;
+    border-radius: 22px;
+    background: #161616;
+    text-align: center;
+}
+
+@media(width >=450px) {
+    .login {
+        width: 380px;
+    }
+}
+
+.login-icon {
+    margin: 0 auto 16px;
+    padding: 2px;
+    width: 150px;
+    height: 130px;
+}
+
+.login-icon>img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    animation: rotate-anime 5s linear infinite;
+}
+
+@keyframes rotate-anime {
+    0%{
+        transform: rotate(0%);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+}
+
+.login>h1 {
+    font-size: 30px;
+    font-weight: 500;
+    margin: 5px 0 20px;
+}
+
+.login-form {
+    display: grid;
+    gap: 16px;
+    place-items: center;
+    width: 100%;
+    margin: 0;
+}
+
+.textbox {
+    width: 100%;
+    position: relative;
+}
+
+.textbox span {
+    position: absolute;
+    top: 50%;
+    left: 7px;
+    translate: 0 -50%;
+    color: rgba(255, 255, 255, 0.38);
+}
+
+.login-form input,
+.login-form button {
+    width: 100%;
+    height: 60px;
+    padding: 0;
+    font-size: 16px;
+    border-radius: 8px; 
+    margin: 2% 0 2% 0%; /* marginの順番は上、右、下、左 */
+    outline: none;
+}
+
+.login-form input {
+    background: transparent;
+    border: 2px solid rgba(255, 255, 255, 0.1);
+    font-size: 18px;
+    padding: 0 0px 0px 38px;
+    color: inherit;
+    box-sizing: border-box; /*親要素からはみ出なくなる*/
+} 
+
+.login-form input:focus { /*コロンの間に空白入れるな！*/
+    border-color: #157ae1;
+}
+
+.login-form input:focus~span {
+    color: #157ae1;
+}
+
+.login-form button {
+    cursor: pointer;
+    background: #157ae1;
+    color: #f9f9f9;
+    border: 0;
+    font-weight: 600;
+    letter-spacing: 2px;
+    width: 100%;
+    
+}

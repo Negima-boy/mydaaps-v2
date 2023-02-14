@@ -1,0 +1,185 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@300;800&display=swap');
+
+:root {
+    --font-family: 'Noto Sans', sans-serif;
+}
+
+body {
+    font-family: var(--font-family);
+    background-color: #171139;
+    margin: 0px;
+    padding: 0;
+}
+
+.React-icon img {
+    width: 300px;
+    height: auto;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.titleField {
+    text-align: center;
+}
+
+.Title {
+    display: inline-block;
+    color: aliceblue;
+    text-align: center;
+    font-weight: 800px, bold;
+    /*transition: all 1.5s ease 0s;*/
+}
+
+.Title:after {
+    display: block;
+    content: '';
+    border-bottom: solid 1px #00FFFF;
+    padding-bottom: 1%;
+    transform: scaleX(0);
+    transition: transform 250ms ease-in-out;
+}
+
+.Title:hover:after {
+    transform: scaleX(1);
+}
+
+/*.Title:hover {
+    transform: scale(1.4);
+} */
+
+.inputfile {
+    margin: 1%;
+}
+
+.updateField {
+    display: flex;
+    justify-content: center;
+}
+
+.updateButton {
+    margin: 1%;
+    width: 150px;
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    padding: 20px 0;
+    border-radius: 25px;
+    border: 0.1px solid #099FFF;
+    background-color: #18181B;
+    box-shadow: 0 4px 8px 0 #00FFFF, 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    cursor: pointer;
+    transition: all 0.5s ease 0s;
+}
+
+.updateButton:hover {
+    transform: scale(1.1);
+}
+
+.updateButton:active {
+    -webkit-transform: translateY(4px);
+    transform: translateY(4px);
+    border-bottom: none;
+}
+
+.updateText {
+    margin: auto;
+    color: white;
+    font-size: 20px;
+}
+
+/*.updateButtun:after {
+    display: block;
+    content: '';
+    border-bottom: solid 1px #00FFFF;
+    padding-bottom: 1%;
+    transform: scaleX(0);
+    transition: transform 250ms ease-in-out;
+}
+
+.updateButtun:hover:after {
+    transform: scaleX(1);
+} */
+
+.myStr {
+    margin: 1%;
+    color: aliceblue;
+}
+
+table {
+    width: 100%;
+    table-layout: fixed;
+    margin: 0%;
+    color: aliceblue;
+    padding: 85px 10px 0 10px;
+    font-size: 25px;
+}
+
+table th,
+table td {
+    word-break: break-all;
+    text-align: center;
+    padding-bottom: 10px;
+}
+
+table .hideButton {
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    background-color: #6c1a31;
+    color: #ffffff;
+    height: 50px;
+    width: 110px;
+    margin: 0 10px 0 auto;
+    border-radius: 28px;
+    border: 0;
+}
+
+table .hideButton:hover{
+    transform: scale(1.1);
+}
+
+table .hideButton:active{
+    -webkit-transform: translateY(2px);
+    transform: translateY(2px);
+    border-bottom: none;
+}
+
+table .material-symbols-outlined {
+    display: flex;
+    color: white;
+    align-items: center;
+    font-size: 30px;
+    font-weight: 300;
+}
+
+table .buttonText {
+    position: absolute;
+    font-size: 25px;
+    font-weight: 400;
+    left: 45px;
+}
+
+#overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#modalContent {
+    z-index: 2;
+    width: 50%;
+    height: 50%;
+    padding: 1em;
+    background: #fff;
+    color: #18181B;
+}
